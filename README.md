@@ -2,11 +2,11 @@
 
 This is a full-stack AI-powered analytics application built for the Shopify ecosystem. It allows merchants to ask natural language questions about their store data (sales, inventory, customers) and receive human-readable insights.
 
-## 🚀 Overview
+##  Overview
 
 The system translates human questions into **ShopifyQL**, executes them against a simulated Shopify API, and uses an **Agentic Workflow** to process and explain the results.
 
-## 🏗️ Architecture
+##  Architecture
 
 The project follows a microservices architecture:
 
@@ -32,7 +32,7 @@ graph TD
     Explainer -->|Human-Readable Answer| User
 ```
 
-## 🧠 Agentic Workflow (Reasoning Path)
+##  Agentic Workflow (Reasoning Path)
 
 To ensure high accuracy (as per the "Agent Design Expectations"), the agent follows these steps:
 
@@ -44,7 +44,7 @@ To ensure high accuracy (as per the "Agent Design Expectations"), the agent foll
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### 1. AI Service (Python)
 ```bash
@@ -70,7 +70,7 @@ npm run dev
 
 ---
 
-## 📄 Sample API Usage
+##  Sample API Usage
 
 **Endpoint**: `POST /api/v1/questions`
 
@@ -90,9 +90,5 @@ npm run dev
 }
 ```
 
-## 🎯 Evaluation Criteria Met
-*   **Separation of Concerns**: Logic is split between Gateway and AI service.
-*   **ShopifyQL Integration**: Real ShopifyQL syntax generation.
-*   **Layman Explanations**: Results are synthesized into business insights.
-*   **Clean API Design**: RESTful endpoints with standard JSON responses.
+
 
